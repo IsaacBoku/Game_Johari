@@ -9,6 +9,7 @@ public class Menu_Inicio : MonoBehaviour
     {
         SceneManager.LoadScene("Inicio");
         Debug.Log("Has iniciado la partida");
+        
     }
     public void Quit_Game()
     {
