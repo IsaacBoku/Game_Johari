@@ -18,8 +18,12 @@ public class EnemyController : MonoBehaviour
     {
         transform.Translate(Vector3.down * Time.deltaTime * speed);
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(this);
+        if(collision.tag == "Enemy")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }
