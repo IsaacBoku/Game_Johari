@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
-    float spawnx = 10f;
+    float spawnx = 7.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,6 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemies()
     {
         float xPos = UnityEngine.Random.Range(spawnx, -spawnx);
-        Instantiate(enemyPrefab, new Vector3(xPos, 6, 0), enemyPrefab.transform.rotation);
+        Instantiate(enemyPrefab, new Vector3(xPos, 9, 0), enemyPrefab.transform.rotation);
     }
 }

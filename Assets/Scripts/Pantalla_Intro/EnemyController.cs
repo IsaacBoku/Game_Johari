@@ -18,12 +18,12 @@ public class EnemyController : MonoBehaviour
     {
         transform.Translate(Vector3.down * Time.deltaTime * speed);
     }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Enemy")
+        if(collision.tag == "Ground")
         {
             Destroy(gameObject);
-            Destroy(collision.gameObject);
         }
     }
 }
