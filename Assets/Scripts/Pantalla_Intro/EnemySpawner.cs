@@ -6,6 +6,11 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
     float spawnx = 7.5f;
+    bool spawny = false;
+    
+    float cooldown = 2;
+    public float time = 0;
+    public float finalTime;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +21,18 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        coolDown();
     }
-
+    void coolDown()
+    {
+        time = Time.time + cooldown;
+    }
     void SpawnEnemies()
     {
-        float xPos = UnityEngine.Random.Range(spawnx, -spawnx);
-        Instantiate(enemyPrefab, new Vector3(xPos, 9, 0), enemyPrefab.transform.rotation);
+        if (time >= finalTime) 
+        {
+            float xPos = UnityEngine.Random.Range(spawnx, -spawnx);
+            Instantiate(enemyPrefab, new Vector3(xPos, 9, 0), enemyPrefab.transform.rotation);
+        }
     }
 }
