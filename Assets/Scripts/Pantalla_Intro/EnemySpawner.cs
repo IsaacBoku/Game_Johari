@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
     float spawnx = 7.5f;
-    bool spawny = false;
+    //bool spawny = false;
     
     float cooldown = 2;
     public float time = 0;
