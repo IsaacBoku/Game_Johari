@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Ground
   - Enemy
-  - Izq
-  - Der
   layers:
   - Default
   - TransparentFX
