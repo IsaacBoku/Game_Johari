@@ -1,9 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ParedesLaterales : MonoBehaviour
 {
+    float cooldown = 2;
+    public float time = 0;
+    public float finalTime;
+
     public float speed = 5f;
 
     // Start is called before the first frame update
@@ -15,7 +21,12 @@ public class ParedesLaterales : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movimiento();
+        CoolDown();
+
+        if (time >= finalTime)
+        {
+            Movimiento();
+        }
     }
 
     private void Movimiento()
@@ -32,5 +43,10 @@ public class ParedesLaterales : MonoBehaviour
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
         }
+    }
+
+    void CoolDown()
+    {
+        time = Time.time + cooldown;
     }
 }
