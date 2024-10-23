@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerIntro : MonoBehaviour
 {
+    public Animator volumeAnimator;
+
     public float speed = 10;
     float horizontalInput;
 
@@ -33,10 +35,12 @@ public class PlayerIntro : MonoBehaviour
             if(vidaActual == 2)
             {
                 vidas[0].SetActive(false);
+                volumeAnimator.SetTrigger("Damage1");
             }
             else if(vidaActual == 1)
             {
                 vidas[1].SetActive(false);
+                volumeAnimator.SetTrigger("Damage2");
             }
             else if(vidaActual <= 0)
             {
