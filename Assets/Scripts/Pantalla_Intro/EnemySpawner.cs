@@ -29,10 +29,23 @@ public class EnemySpawner : MonoBehaviour
     }
     void SpawnEnemies()
     {
-        if (time >= finalTime) 
+        if (time >= finalTime)
         {
             float xPos = UnityEngine.Random.Range(spawnx, -spawnx);
             Instantiate(enemyPrefab, new Vector3(xPos, 9, 0), enemyPrefab.transform.rotation);
+        }
+    }
+
+    void CambioSpawn()
+    {
+        if(time >= finalTime)
+        {
+            spawnx -= Time.deltaTime;
+
+            if (spawnx <= 1f)
+            {
+                spawnx = 1f;
+            }
         }
     }
 }

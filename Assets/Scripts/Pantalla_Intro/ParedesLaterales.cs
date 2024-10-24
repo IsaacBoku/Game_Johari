@@ -10,12 +10,11 @@ public class ParedesLaterales : MonoBehaviour
     public float time = 0;
     public float finalTime;
 
-    public GameObject marcos;
 
     // Start is called before the first frame update
     void Start()
     {
-        marcos.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -26,7 +25,6 @@ public class ParedesLaterales : MonoBehaviour
         if(time >= finalTime)
         {
             Movimiento();
-            marcos.SetActive(true);
         }
     }
 

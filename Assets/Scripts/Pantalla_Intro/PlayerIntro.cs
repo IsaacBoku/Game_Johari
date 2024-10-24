@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerIntro : MonoBehaviour
 {
+    float cooldown = 2;
+    public float time = 0;
+    float finalTime = 20f;
+
+    public GameObject marcos;
+
     public Animator volumeAnimator;
 
-    public float speed = 10;
+    public float speed = 12;
     float horizontalInput;
 
     int vidaMax = 3;
@@ -24,6 +31,8 @@ public class PlayerIntro : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
+
+        CoolDown();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -48,6 +57,26 @@ public class PlayerIntro : MonoBehaviour
             }
 
             Destroy(other.gameObject);
+        }
+    }
+
+    void CoolDown()
+    {
+        time = Time.time + cooldown;
+
+        if(time >= finalTime)
+        {
+            CambioVelocidad();
+        }
+    }
+
+    void CambioVelocidad()
+    {
+        speed -= Time.deltaTime;
+
+        if (speed <= 2)
+        {
+            speed = 2;
         }
     }
 }
