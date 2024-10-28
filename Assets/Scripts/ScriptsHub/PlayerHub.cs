@@ -6,9 +6,11 @@ using UnityEngine;
 public class PlayerHub : MonoBehaviour
 {
     public float speed = 13f;
-    public float jumpForce = 5f;
+    public float jumpForce = 1000f;
     public bool isGrounded = true;
     Rigidbody2D rb;
+
+    public float jumpForce2 = 2000f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +26,7 @@ public class PlayerHub : MonoBehaviour
 
     public void Movimiento()
     {
-        if (isGrounded == true)
-        {
-            transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
-        }
+        transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
@@ -40,8 +39,19 @@ public class PlayerHub : MonoBehaviour
     {
         if(other.gameObject.tag == "Ground")
         {
-            Movimiento();
             isGrounded = true;
+        }
+
+        if (other.gameObject.tag == "Trampolin" && isGrounded == true)
+        {
+            rb.AddForce(Vector2.up * jumpForce);
+            isGrounded = false;
+        }
+
+        if (other.gameObject.tag == "Trampolin" && isGrounded == false)
+        {
+            rb.AddForce(Vector2.up * jumpForce2);
+            isGrounded = false;
         }
     }
 }
