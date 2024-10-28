@@ -7,7 +7,7 @@ public class PlayerHub : MonoBehaviour
 {
     public float speed = 13f;
     public float jumpForce = 5f;
-    bool isGrounded = true;
+    public bool isGrounded = true;
     Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class PlayerHub : MonoBehaviour
 
     public void Movimiento()
     {
-        if (isGrounded)
+        if (isGrounded == true)
         {
             transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
         }
@@ -40,6 +40,7 @@ public class PlayerHub : MonoBehaviour
     {
         if(other.gameObject.tag == "Ground")
         {
+            Movimiento();
             isGrounded = true;
         }
     }
