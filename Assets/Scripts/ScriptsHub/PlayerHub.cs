@@ -14,6 +14,11 @@ public class PlayerHub : MonoBehaviour
     public float speed;
     public float jumpForce;
     public float wallSlideSpeed;
+    public int facingDir = 1;
+
+    [Header("Wall")]
+    public Transform wallCheck;
+    public float wallCheckDistance;
 
     [Header("Booleanos")]
     public bool isGround = true;
@@ -21,17 +26,36 @@ public class PlayerHub : MonoBehaviour
     public bool canUseDoubleJump = false;
     public bool isTouchingWall = false;
 
+    [Header("Layers")]
+    public LayerMask isWhatGround;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        ani = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (IsWallDetected())
+        {
+            ani.SetBool("WallDu", true);
+            ani.SetBool("Jump", false);
+        }
         Movimiento();
         WallDumbling();
         Jump();
+        Debug.Log(IsWallDetected());
+        if (rb.velocity.y == 0)
+        {
+            ani.SetBool("Jump",false);
+            ani.SetBool("WallDu", false);
+        }
+        ani.SetFloat("yVelocity", rb.velocity.y);
+        if (rb.velocity.y > 0)
+            ani.SetBool("Jump", true);
+
     }
 
     public void Movimiento()
@@ -48,9 +72,11 @@ public class PlayerHub : MonoBehaviour
     {
         if (isTouchingWall && !isGround)
         {
+
             rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
-            ani.SetBool("WallDu",true);
+
         }
+
     }
     public void Jump()
     {
@@ -61,6 +87,7 @@ public class PlayerHub : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 isGround = false;
                 canDoubleJump = canUseDoubleJump;
+
             }
             else if(canDoubleJump)
             {
@@ -73,7 +100,14 @@ public class PlayerHub : MonoBehaviour
 
                 isTouchingWall = false;
             }
+
         }
+    }
+    public bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right*facingDir, wallCheckDistance, isWhatGround);
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
