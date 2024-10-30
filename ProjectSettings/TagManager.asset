@@ -9,6 +9,7 @@ TagManager:
   - Der
   - Izq
   - Trampolin
+  - Wall
   layers:
   - Default
   - TransparentFX

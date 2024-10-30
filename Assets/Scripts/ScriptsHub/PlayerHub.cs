@@ -5,14 +5,22 @@ using UnityEngine;
 
 public class PlayerHub : MonoBehaviour
 {
-    public float speed = 13f;
-    public float jumpForce = 1000f;
-    public bool isGrounded = true;
-    Rigidbody2D rb;
+    [Header("Components")]
+    private Rigidbody2D rb;
+    private Animator ani;
 
-    public float jumpForce2 = 2000f;
 
-    // Start is called before the first frame update
+    [Header("Movimiento")]
+    public float speed;
+    public float jumpForce;
+    public float wallSlideSpeed;
+
+    [Header("Booleanos")]
+    public bool isGround = true;
+    public bool canDoubleJump = false;
+    public bool canUseDoubleJump = false;
+    public bool isTouchingWall = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,36 +30,69 @@ public class PlayerHub : MonoBehaviour
     void Update()
     {
         Movimiento();
+        WallDumbling();
+        Jump();
     }
 
     public void Movimiento()
     {
-        transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
+        if (moveHorizontal > 0)
+            transform.localScale = new Vector2(1, 1);
+        if(moveHorizontal < 0)
+            transform.localScale = new Vector2(-1, 1);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(Vector2.up * jumpForce);
-            isGrounded = false;
-        }
+        rb.velocity = new Vector2(moveHorizontal*speed, rb.velocity.y);
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
+    public void WallDumbling()
     {
-        if(other.gameObject.tag == "Ground")
+        if (isTouchingWall && !isGround)
         {
-            isGrounded = true;
-        }
-
-        if (other.gameObject.tag == "Trampolin" && isGrounded == true)
-        {
-            rb.AddForce(Vector2.up * jumpForce);
-            isGrounded = false;
-        }
-
-        if (other.gameObject.tag == "Trampolin" && isGrounded == false)
-        {
-            rb.AddForce(Vector2.up * jumpForce2);
-            isGrounded = false;
+            rb.velocity = new Vector2(rb.velocity.x, -wallSlideSpeed);
+            ani.SetBool("WallDu",true);
         }
     }
+    public void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isGround)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                isGround = false;
+                canDoubleJump = canUseDoubleJump;
+            }
+            else if(canDoubleJump)
+            {
+                 rb.velocity = new Vector2(rb.velocity.x,jumpForce);
+                canDoubleJump= false;
+            }
+            else if (isTouchingWall)
+            {
+                rb.velocity = new Vector2(-rb.velocity.y * speed, jumpForce);
+
+                isTouchingWall = false;
+            }
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+        {
+            isGround = true;
+            canDoubleJump = false;
+        }
+        else if(collision.gameObject.tag == "Wall")
+        {
+            isTouchingWall = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ground")
+            isGround = false;
+        else if(collision.gameObject.tag == "Wall")
+            isTouchingWall = false;
+    }
+
 }
