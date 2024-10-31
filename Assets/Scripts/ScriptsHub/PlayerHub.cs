@@ -1,4 +1,4 @@
-using Autodesk.Fbx;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,14 +57,26 @@ public class PlayerHub : MonoBehaviour
         {
             ani.SetBool("WallDu", true);
             ani.SetBool("Jump", false);
+            ani.SetBool("Walk", false);
         }
         if (rb.velocity.y == 0)
         {
             ani.SetBool("Jump",false);
             ani.SetBool("WallDu", false);
+            ani.SetBool("Walk", false);
         }
         if (rb.velocity.y > 0)
+        {
             ani.SetBool("Jump", true);
+            ani.SetBool("Walk", false);
+        }
+        if(xInput != 0 && IsGroundDetected() && !IsWallDetected())
+        {
+            ani.SetBool("Walk",true);
+            ani.SetBool("Jump", false);
+        }
+        if(xInput == 0)
+            ani.SetBool("Walk", false);
     }
 
     public void Movimiento()
