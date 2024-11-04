@@ -11,7 +11,7 @@ public class Player : Entity
     [Header("Move info")]
     public float moveSpeed = 12f;
     public float jumpForce;
-    public float swordReturnImpact;
+    //public float swordReturnImpact;
     private float defaultMoveSpeed;
     private float defaultJumpForce;
 
