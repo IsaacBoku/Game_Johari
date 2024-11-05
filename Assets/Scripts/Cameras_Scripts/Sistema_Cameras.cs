@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Sistema_Cameras : MonoBehaviour
 {
-
     [Header("Cameras")]
     public GameObject cameraInicial;
     public GameObject cameraOuticial;
