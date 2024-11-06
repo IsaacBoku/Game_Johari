@@ -38,10 +38,21 @@ public class Menu_Pausa : MonoBehaviour
         }
 
     }
+    public void Cerrar_Menu()
+    {
+        Time.timeScale = 1;
+        menuPausa.SetActive(false);
+        menuOptions.SetActive(false);
+        isPause = false;
+    }
     public void Menu_Options()
     {
         menuOptions.SetActive(true);
         menuPrincipal.SetActive(false);
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
     public void BackMenu()
     {
