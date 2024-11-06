@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad9019a1515f0e428aaa348a0e605f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRb: {fileID: 0}
+  playerRb: {fileID: 784796910}
   jumpPower: 1200
 --- !u!1 &626112949
 GameObject:
@@ -752,6 +752,12 @@ MonoBehaviour:
 --- !u!4 &784796908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 377956149441056368, guid: 7cc6aaa686eebd94786c1cefae9339a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 73964612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &784796910 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 335073338693596250, guid: 7cc6aaa686eebd94786c1cefae9339a3,
     type: 3}
   m_PrefabInstance: {fileID: 73964612}
   m_PrefabAsset: {fileID: 0}
