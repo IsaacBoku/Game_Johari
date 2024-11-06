@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CaidaPlataforma : MonoBehaviour
 {
-    float fallDelay = 1f;
-    float destroyDelay = 2f;
+    float fallDelay = 1.5f;
+    float destroyDelay = 2.5f;
+    public Transform respawn;
 
     bool falling = false;
 
@@ -30,7 +31,10 @@ public class CaidaPlataforma : MonoBehaviour
             return;
         }
 
-        StartCoroutine(StartFall());
+        if (collision.transform.tag == "Player")
+        {
+            StartCoroutine(StartFall());
+        }
     }
 
     private IEnumerator StartFall()
@@ -40,6 +44,13 @@ public class CaidaPlataforma : MonoBehaviour
         yield return new WaitForSeconds(fallDelay);
 
         rb.bodyType = RigidbodyType2D.Dynamic;
-        Destroy(gameObject, destroyDelay);
+        Invoke("Respawn", destroyDelay);
+    }
+
+    public void Respawn()
+    {
+        falling = false;
+        gameObject.transform.localPosition = respawn.position;
+        rb.bodyType = RigidbodyType2D.Static;
     }
 }

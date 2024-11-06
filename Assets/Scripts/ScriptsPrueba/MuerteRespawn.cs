@@ -21,6 +21,9 @@ public class MuerteRespawn : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        player.transform.position = checkPoint.position;
+        if(other.gameObject.tag == "Player")
+        {
+            player.transform.position = checkPoint.position;
+        }
     }
 }
