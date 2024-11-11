@@ -394,7 +394,7 @@ Transform:
   m_GameObject: {fileID: 21126825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.024, y: 0.109, z: 9.049798}
+  m_LocalPosition: {x: 0.024, y: -0.32, z: 9.049798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1658,7 +1658,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 16a420b693fd8c540822e4f02a1839ca, type: 3}
-  m_Color: {r: 0.67485857, g: 0.48246706, b: 0.735849, a: 1}
+  m_Color: {r: 0.4274119, g: 0.4073514, b: 0.4339623, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6307,7 +6307,7 @@ Transform:
   m_GameObject: {fileID: 787324373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.954, z: 9.049798}
+  m_LocalPosition: {x: 0, y: -1.38, z: 9.049798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7440,7 +7440,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 1081061401, guid: edf26348e5a6ce544ada248deb9bae84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10697,7 +10697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1423603252
 MonoBehaviour:
   m_ObjectHideFlags: 19
@@ -10741,7 +10741,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: d4679c5cefa4acb42aad3de5334e6be1, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -11142,7 +11142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1490660434
 Transform:
   m_ObjectHideFlags: 0
@@ -11214,6 +11214,8 @@ PlayableDirector:
     value: {fileID: 1281810812}
   - key: {fileID: 1291217625020832343, guid: 557986777cf47234ea2569c2db0484db, type: 2}
     value: {fileID: 21126828}
+  - key: {fileID: -6546062960632962230, guid: 557986777cf47234ea2569c2db0484db, type: 2}
+    value: {fileID: 1952250950}
   m_ExposedReferences:
     m_References: []
 --- !u!61 &1490660438
@@ -12203,7 +12205,7 @@ Transform:
   m_GameObject: {fileID: 1706272358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5999997, y: 1.0394013, z: -10}
+  m_LocalPosition: {x: 2.3899999, y: 14.084871, z: -28.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12493,7 +12495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1761460165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12542,7 +12544,7 @@ Transform:
   m_GameObject: {fileID: 1761460164}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7099996, y: 0.75453067, z: 0}
+  m_LocalPosition: {x: 12.62, y: 0.29453063, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13366,7 +13368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1952250951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13405,8 +13407,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1154727461
+  m_SortingLayer: 2
   m_SortingOrder: 15
   m_Sprite: {fileID: 902039411, guid: bcefc3347218dbd44986416d02ebded0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13428,7 +13430,7 @@ Transform:
   m_GameObject: {fileID: 1952250950}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43, y: 0.35, z: 0}
+  m_LocalPosition: {x: 13.473, y: -2.536, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13468,7 +13470,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4.59
+  m_Radius: 17.54
 --- !u!114 &1952250954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14416,7 +14418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2063634322
 Transform:
   m_ObjectHideFlags: 0
