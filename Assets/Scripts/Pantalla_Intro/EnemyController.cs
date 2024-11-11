@@ -19,11 +19,8 @@ public class EnemyController : MonoBehaviour
         transform.Translate(Vector3.down * Time.deltaTime * speed);
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.tag == "Ground")
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
