@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2207a81e44560fe4cb6c61751fa21036
+guid: a9008e0b89a9fab4badd208465fde34d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,18 +95,47 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: letra_Continue_0
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 580
+        width: 175
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b38ff3f8eb6f0e49af64a3b0af0ece4
+      internalID: -282115022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 868280544ccfc9b44874a7b766d5ae0a
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      letra_Continue_0: -282115022
+      letra_Continue_1: 430984506
+      letra_Continue_2: 1304007698
+      letra_Continue_3: 1377264349
+      letra_Continue_4: -1830871581
+      letra_Continue_5: 267800263
+      letra_Continue_6: -708854086
+      letra_Continue_7: 1717752299
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
