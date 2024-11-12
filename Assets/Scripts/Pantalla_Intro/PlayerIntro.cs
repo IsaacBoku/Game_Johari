@@ -102,9 +102,9 @@ public class PlayerIntro : MonoBehaviour
     {
         moveSpeed -= Time.deltaTime;
 
-        if (moveSpeed <= 3)
+        if (moveSpeed <= 4)
         {
-            moveSpeed = 3;
+            moveSpeed = 4;
         }
     }
     public void ZeroVelocity() => rb.velocity = new Vector2(0, 0);
