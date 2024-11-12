@@ -31,9 +31,7 @@ public class Menu_Pausa : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Time.timeScale = 1;
-                menuPausa.SetActive(false);
-                isPause = false;
+                Cerrar_Menu();
             }
         }
 
