@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e2d47d758db5d7499bb3b0692a34fcb
+guid: c8738ba9d2c3940418ebf229cd91ab6a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barras laterales_0
+      name: Menu_pause_0
       rect:
         serializedVersion: 2
-        x: 563
-        y: 464
-        width: 800
-        height: 118
+        x: 732
+        y: 423
+        width: 452
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01faff7efe77ab468b5cf206f8b9d0e
-      internalID: 944241594
+      spriteID: f1f09c4d5ca2aab418e6c8ebb6156949
+      internalID: 1443358776
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 99c9fe20ba5d21a4aa4266d7658a745d
     internalID: 0
     vertices: []
     indices: 
@@ -128,12 +128,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      barras laterales_0: 944241594
-      barras laterales_1: -830937268
-      barras laterales_2: -1070480929
-      barras laterales_3: 1852354315
-      barras laterales_4: -1260161273
-      barras laterales_5: -504523203
+      Menu_pause_0: 1443358776
+      Menu_pause_1: -136186169
+      Menu_pause_10: -1539986756
+      Menu_pause_11: -1258439098
+      Menu_pause_12: -623309188
+      Menu_pause_13: 216129535
+      Menu_pause_14: 932431335
+      Menu_pause_15: 369742951
+      Menu_pause_16: 614984031
+      Menu_pause_17: 1656393699
+      Menu_pause_18: 1670127395
+      Menu_pause_19: 1137239444
+      Menu_pause_2: 1176112672
+      Menu_pause_20: -1351613029
+      Menu_pause_21: -1527799308
+      Menu_pause_22: -1003863339
+      Menu_pause_3: 1859092914
+      Menu_pause_4: -1323457340
+      Menu_pause_5: -1646245849
+      Menu_pause_6: -6406950
+      Menu_pause_7: 1381712578
+      Menu_pause_8: -566205462
+      Menu_pause_9: -1054730212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
