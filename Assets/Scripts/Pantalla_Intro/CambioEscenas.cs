@@ -27,6 +27,11 @@ public class CambioEscenas : MonoBehaviour
         }
     }
 
+    public void Cambio()
+    {
+        SceneManager.LoadScene("Hub");
+    }
+
     void coolDown()
     {
         time = Time.time + cooldown;

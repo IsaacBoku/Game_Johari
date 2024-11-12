@@ -2,32 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerIntro : MonoBehaviour
 {
+    [Header ("Vida")]
     float cooldown = 2;
     public float time = 0;
     float finalTime = 20f;
-
-    public GameObject marcos;
-
-    public Animator volumeAnimator;
-
-    public float speed = 12;
-    float horizontalInput;
-
+    public GameObject[] vidas;
     int vidaMax = 3;
     int vidaActual;
+
     [Header("Components")]
     private Rigidbody2D rb;
     private Animator ani;
+    public Animator volumeAnimator;
+    public GameObject marcos;
 
     [Header("Movimiento")]
     protected float xInput;
     protected float yInput;
     public float moveSpeed;
+    public float speed = 12;
+    float horizontalInput;
 
-    public GameObject[] vidas;
+    
 
     public int facingDir { get; private set; } = 1;
     bool facilRight = true;
@@ -67,10 +67,17 @@ public class PlayerIntro : MonoBehaviour
             else if(vidaActual <= 0)
             {
                 vidas[2].SetActive(false);
+
+                Invoke("CambioPlayer", 1f);
             }
 
             Destroy(other.gameObject);
         }
+    }
+
+    public void CambioPlayer()
+    {
+        SceneManager.LoadScene("Hub");
     }
 
     public void Movimiento()
