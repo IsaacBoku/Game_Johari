@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Menu_Options : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Menu_Options : MonoBehaviour
     private List<Resolution> filteredResolutions;
     private float currentRefreshRate;
     private int currentResolutionIndex = 0;
+    public Toggle fullScreen;
+
+    
 
     private void Start()
     {
@@ -54,12 +58,17 @@ public class Menu_Options : MonoBehaviour
         resolutionDropDown.RefreshShownValue();
         SetResolution(currentResolutionIndex);
         #endregion
+        
     }
 
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = filteredResolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width,resolution.height,true);
+        Screen.SetResolution(resolution.width,resolution.height,false);
+    }
+    public void SetFullScreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
     }
 
 }
