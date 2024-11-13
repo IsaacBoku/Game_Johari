@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using static UnityEngine.ParticleSystem;
 
 public class Menu_Options : MonoBehaviour
 {
@@ -16,7 +18,7 @@ public class Menu_Options : MonoBehaviour
     private List<Resolution> filteredResolutions;
     private float currentRefreshRate;
     private int currentResolutionIndex = 0;
-    public Toggle fullScreen;
+    private bool isFullScreen;
 
     
 
@@ -29,6 +31,14 @@ public class Menu_Options : MonoBehaviour
         resolutionDropDown.ClearOptions();
         currentRefreshRate = (float)Screen.currentResolution.refreshRateRatio.value;
         Debug.Log("RefreshRate: "+currentRefreshRate);
+        //this is the actual loop check
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            if (!filteredResolutions.Any(x => x.width == resolutions[i].width && x.height == resolutions[i].height))  //check if resolution already exists in list
+            {
+                filteredResolutions.Add(resolutions[i]);  //add resolution to list if it doesn't exist yet
+            }
+        }
         for (int i = 0; i < resolutions.Length; i++)
         {
             if ((float)resolutions[i].refreshRateRatio.value == currentRefreshRate)
@@ -54,7 +64,7 @@ public class Menu_Options : MonoBehaviour
         }
 
         resolutionDropDown.AddOptions(options);
-        resolutionDropDown.value = currentResolutionIndex=0;
+        resolutionDropDown.value = currentResolutionIndex;
         resolutionDropDown.RefreshShownValue();
         SetResolution(currentResolutionIndex);
         #endregion
@@ -64,7 +74,7 @@ public class Menu_Options : MonoBehaviour
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = filteredResolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width,resolution.height,false);
+        Screen.SetResolution(resolution.width,resolution.height,FullScreenMode.Windowed,resolution.refreshRateRatio);
     }
     public void SetFullScreen()
     {
