@@ -11,15 +11,27 @@ public class GiratoriaPlataforma : MonoBehaviour
     private BoxCollider2D platformCollider;
     private float heightCheckDistance = .5f;
 
-    
+    [SerializeField] private LayerMask playerLayerMask;
     [SerializeField] private float rotationSpeed = 20f;
     [SerializeField] private float rotationMax = 30f;
+
+    private void Awake()
+    {
+        platformCollider = GetComponent<BoxCollider2D>();
+    }
 
     private void Update()
     {
         if (shouldRotate)
         {
+            RaycastHit2D raycastHit2D = Physics2D.BoxCast(platformCollider.bounds.center, platformCollider.bounds.size, 0, Vector2.up, heightCheckDistance, playerLayerMask);
 
+            if (raycastHit2D.collider == null)
+            {
+                player = null;
+                shouldRotate = false;
+                return;
+            }
 
             Vector3 playerRelativePosition = transform.InverseTransformPoint(player.position);
             float rotationSpeedMultiplier = CalculateRotationMultiplier(playerRelativePosition);
