@@ -2217,6 +2217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plataforma equilibrio
       objectReference: {fileID: 0}
+    - target: {fileID: 5969136776653490103, guid: badac26501e9c1c4ab79326fe8b56129,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8664764207215055005, guid: badac26501e9c1c4ab79326fe8b56129,
         type: 3}
       propertyPath: m_LocalPosition.x
