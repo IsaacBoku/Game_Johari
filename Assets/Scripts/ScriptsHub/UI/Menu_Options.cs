@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
-using static UnityEngine.ParticleSystem;
+using Lean.Localization;
 
 public class Menu_Options : MonoBehaviour
 {
@@ -20,10 +20,14 @@ public class Menu_Options : MonoBehaviour
     private int currentResolutionIndex = 0;
     private bool isFullScreen;
 
+    /*[Header("Lean location")]
+    [SerializeField] private TMP_Dropdown dropdownLanguage;
+    [SerializeField] private TextMeshProUGUI dropdownLabel;*/
     
 
     private void Start()
     {
+        
         #region Resolution
         resolutions = Screen.resolutions;
         filteredResolutions = new List<Resolution>();
