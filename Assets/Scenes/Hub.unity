@@ -394,7 +394,7 @@ Transform:
   m_GameObject: {fileID: 21126825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.024, y: -0.32, z: 9.049798}
+  m_LocalPosition: {x: 0.058, y: -0.335, z: 9.049798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12093,6 +12093,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407179002420479712, guid: cad8682845bd33449babf71bb1f43a44,
+        type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407179002420479712, guid: cad8682845bd33449babf71bb1f43a44,
+        type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 5700462041459939145, guid: cad8682845bd33449babf71bb1f43a44,
         type: 3}
