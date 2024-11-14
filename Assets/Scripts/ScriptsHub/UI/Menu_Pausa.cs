@@ -48,7 +48,8 @@ public class Menu_Pausa : MonoBehaviour
             {
                 menuPrincipal.SetActive(true);
                 menuOptions.SetActive(false);
-                menuPausa.SetActive(false );
+                menuPausa.SetActive(false);
+                menuVideo.SetActive(false);
                 Time.timeScale = 1;
                 isPause = false;
                 Debug.Log("Closed menu pause");
@@ -91,6 +92,7 @@ public class Menu_Pausa : MonoBehaviour
     {
         menuOptions.SetActive(false);
         menuPrincipal.SetActive(true);
+        menuVideo.SetActive(false);
         Debug.Log("Back Menu Pause");
     }
     #endregion

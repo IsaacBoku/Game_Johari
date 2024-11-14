@@ -10637,7 +10637,7 @@ PrefabInstance:
     - target: {fileID: 3140077209521847536, guid: cad8682845bd33449babf71bb1f43a44,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Cerrar_Menu
+      value: Cerrar_Menu_Pausa
       objectReference: {fileID: 0}
     - target: {fileID: 3459102167498223402, guid: cad8682845bd33449babf71bb1f43a44,
         type: 3}
@@ -10653,6 +10653,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Menu_Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710353838498792347, guid: cad8682845bd33449babf71bb1f43a44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1324778184}
+    - target: {fileID: 4710353838498792347, guid: cad8682845bd33449babf71bb1f43a44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackMenu
       objectReference: {fileID: 0}
     - target: {fileID: 5941315900749218958, guid: cad8682845bd33449babf71bb1f43a44,
         type: 3}
@@ -10689,6 +10699,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad8682845bd33449babf71bb1f43a44, type: 3}
+--- !u!1 &1125420218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5867860112429623942, guid: cad8682845bd33449babf71bb1f43a44,
+    type: 3}
+  m_PrefabInstance: {fileID: 1125420217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1135736467
 GameObject:
   m_ObjectHideFlags: 0
@@ -12556,6 +12572,9 @@ MonoBehaviour:
   menuPausa: {fileID: 1901266183}
   menuOptions: {fileID: 1806241723}
   menuPrincipal: {fileID: 1677950649}
+  menuVideo: {fileID: 1125420218}
+  menuAudio: {fileID: 0}
+  menuController: {fileID: 0}
   isPause: 0
 --- !u!4 &1324778185
 Transform:
