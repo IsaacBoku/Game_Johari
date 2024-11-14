@@ -21,8 +21,13 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float wallCheckDistance;
     [SerializeField] protected LayerMask whatIsGround;
 
+    [Header("Camera Stuff")]
+    [SerializeField] private GameObject _cameraFollowGO;
+
+    private CameraFollowObject _cameraFollowObject;
+
     public int facingDir { get; private set; } = 1;
-    protected bool facingRight = true;
+    public  bool facingRight = true;
 
     public System.Action onFlipped;
 
@@ -37,6 +42,8 @@ public class Entity : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         stats = GetComponent<CharacterStats>();
         cd = GetComponent<CapsuleCollider2D>();
+
+        _cameraFollowObject = _cameraFollowGO.GetComponent<CameraFollowObject>();
     }
 
     protected virtual void Update()
@@ -77,6 +84,9 @@ public class Entity : MonoBehaviour
         facingDir = facingDir * -1;
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
+
+        //doblar la camara de seguimiento
+        _cameraFollowObject.CallTurn();
 
         if (onFlipped != null)
             onFlipped();
