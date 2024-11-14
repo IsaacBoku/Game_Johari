@@ -21,10 +21,12 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float wallCheckDistance;
     [SerializeField] protected LayerMask whatIsGround;
 
+
     [Header("Camera Stuff")]
     [SerializeField] private GameObject _cameraFollowGO;
 
     private CameraFollowObject _cameraFollowObject;
+    private float _fallSpeedYDampingChangeThreshold;
 
     public int facingDir { get; private set; } = 1;
     public  bool facingRight = true;
@@ -43,12 +45,25 @@ public class Entity : MonoBehaviour
         stats = GetComponent<CharacterStats>();
         cd = GetComponent<CapsuleCollider2D>();
 
+
         _cameraFollowObject = _cameraFollowGO.GetComponent<CameraFollowObject>();
+        _fallSpeedYDampingChangeThreshold = CameraManager.instance._fallSpeedYDampingChangeThreshold;
     }
 
     protected virtual void Update()
     {
+        //Si nosotros estamos cayendo hara una velocidad suavizada
+        if (rb.velocity.y < _fallSpeedYDampingChangeThreshold && !CameraManager.instance.IsLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            CameraManager.instance.LerpYDamping(true);
+        }
+        //IF nosotros estamos saltando o hacia arriba
+        if (rb.velocity.y >= 0f && !CameraManager.instance.IsLerpingYDamping && CameraManager.instance.LerpedFromPlayerFalling)
+        {
 
+            CameraManager.instance.LerpYDamping(false);
+
+        }
     }
     protected virtual void ReturnDefaultSpeed()
     {

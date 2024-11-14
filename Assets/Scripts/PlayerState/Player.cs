@@ -15,6 +15,7 @@ public class Player : Entity
     private float defaultMoveSpeed;
     private float defaultJumpForce;
 
+
     #region States
     public PlayerStateMachine stateMachine { get; private set; }
     public PlayerIdleState idleState { get; private set; }
@@ -42,6 +43,7 @@ public class Player : Entity
         wallJump = new PlayerWallJumpState(this, stateMachine, "Jump");
 
 
+
     }
 
     protected override void Start()
@@ -58,6 +60,7 @@ public class Player : Entity
     {
         base.Update();
         stateMachine.currentState.Update();
+
     }
     protected override void ReturnDefaultSpeed()
     {
