@@ -6,12 +6,23 @@ public class Seguimiento_NPC : MonoBehaviour
 {
     [Header("NPC persigue")]
     [SerializeField] public GameObject player;
+    public Rigidbody2D rb;
 
     [Header("Movement NPC")]
     Vector2 NPCPos;
 
     bool persiP;
     [SerializeField] public float speed;
+    public int facingDir = 1;
+    public bool facingRight = true;
+
+
+    [Header("Tutoriales")]
+    [SerializeField] private Transform spaceCheck;
+    [SerializeField] private float spaceDistance;
+    [SerializeField] protected LayerMask whatIsSpace;
+
+
 
     private void Update()
     {
@@ -28,4 +39,7 @@ public class Seguimiento_NPC : MonoBehaviour
         NPCPos = player.transform.position;
         persiP=true;
     }
+
+
+
 }

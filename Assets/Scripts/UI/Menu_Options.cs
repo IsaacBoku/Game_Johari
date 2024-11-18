@@ -11,6 +11,7 @@ public class Menu_Options : MonoBehaviour
     [Header("Game_UI")]
 
     [Header("Audio")]
+    [SerializeField] Slider _musicSilder, _sfxSlider;
 
     [Header("Video")]
     [SerializeField] private TMP_Dropdown resolutionDropDown;
@@ -84,5 +85,24 @@ public class Menu_Options : MonoBehaviour
     {
         Screen.fullScreen = !Screen.fullScreen;
     }
-
+    #region Audio
+    public void ToggleMusic()
+    {
+        AudioManager.instance.ToggleMusic();
+    }
+    public void ToggleSFX()
+    {
+        AudioManager.instance.ToggleSFX();
+    }
+    public void MusicVolume()
+    {
+        AudioManager.instance.MusicVolume(_musicSilder.value);
+        Debug.Log(_musicSilder.value);
+    }
+    public void SFXVolume()
+    {
+        AudioManager.instance.SFXVolume(_sfxSlider.value);
+        Debug.Log(_sfxSlider.value);
+    }
+    #endregion
 }
