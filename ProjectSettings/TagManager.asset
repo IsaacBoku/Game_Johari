@@ -50,11 +50,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: "Arboles_Capa1_1\xBANivel"
-    uniqueID: 3320178407
+  - name: Lobby_Arbol_2
+    uniqueID: 1284410877
+    locked: 0
+  - name: Lobby_Arbol_1
+    uniqueID: 1151708919
     locked: 0
   - name: Player
     uniqueID: 3140239835
+    locked: 0
+  - name: "Arboles_Capa1_1\xBANivel"
+    uniqueID: 3320178407
     locked: 0
   - name: "Ramas_Arboles_1\xBANivel"
     uniqueID: 187671363
