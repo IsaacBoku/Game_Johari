@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: e653d7bef8ae8ab4d8f50ec541413edd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: concept_level1_v3_0
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 4171
+        width: 659
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ea860e07b2e8240826bfc5b24613c9
+      internalID: -906494838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_1
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 4877
+        width: 139
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a452f54f2cf70b04d942ba2c3313b887
+      internalID: -309421494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_2
+      rect:
+        serializedVersion: 2
+        x: 3248
+        y: 4877
+        width: 158
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2629baec00559e49ad628052c4acb87
+      internalID: -273465017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_3
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 4877
+        width: 174
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9317ec5cdef3dbc4a93e086586d4647f
+      internalID: 1013749410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_4
+      rect:
+        serializedVersion: 2
+        x: 4683
+        y: 4877
+        width: 246
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e30f5efc410b04f88e40e6816a3f40
+      internalID: -499729928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_6
+      rect:
+        serializedVersion: 2
+        x: 5199
+        y: 4877
+        width: 247
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a913f4d900e89e478cc34383abb0635
+      internalID: -263836130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_15
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 4171
+        width: 177
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135d75bcf3b8bcc4a95fb8fa3176d3fc
+      internalID: 427784787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_16
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 4171
+        width: 196
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb83faa7637b3be4491e6223ef323eff
+      internalID: 110275795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_18
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 4171
+        width: 250
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cfe90bf4e3e8a4795c9155c5a650c8
+      internalID: -1152263305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_19
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 4171
+        width: 344
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781c7b4dc01733f449a33212115f7f1b
+      internalID: 1744588514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_20
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 4186
+        width: 289
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56da9958f99e0e547a56fd2c5cf00e93
+      internalID: -2095185208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_21
+      rect:
+        serializedVersion: 2
+        x: 6125
+        y: 4260
+        width: 157
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b491957be08127947ac773155b8f75e3
+      internalID: -1028532777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_23
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 4171
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd93cf9c024d0f54a9884fa9885c658b
+      internalID: -858823455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_24
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 4171
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d8f14abd3f9c64a869a1b37223a70f
+      internalID: 869909929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_25
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 3157
+        width: 563
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7de46aa01803b4e950c1c693c9fb0a
+      internalID: 703377832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_27
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 3157
+        width: 501
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da818eb1527e8348a4b97f4db971260
+      internalID: -227572391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_28
+      rect:
+        serializedVersion: 2
+        x: 6298
+        y: 2489
+        width: 216
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea58629e6c98964a9c15c2a9125cbeb
+      internalID: -321689563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_29
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 1984
+        width: 239
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17fce207553633488cacd7994dcb4f9
+      internalID: -99394692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_30
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 1448
+        width: 293
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeea89d0cf2b04840a7f42f60e537d35
+      internalID: -1047738354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_31
+      rect:
+        serializedVersion: 2
+        x: 4833
+        y: 1448
+        width: 354
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8223b8e66a565524091e1b68a68fab24
+      internalID: 881446884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_32
+      rect:
+        serializedVersion: 2
+        x: 6310
+        y: 1448
+        width: 204
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8edbff41ad5ad44bca47401f510ea3
+      internalID: 541954925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: concept_level1_v3_33
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 847
+        width: 536
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dca46712ba35c0478b9c7576f2b6277
+      internalID: 327777772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      concept_level1_v3_0: -906494838
+      concept_level1_v3_1: -309421494
+      concept_level1_v3_10: 730982744
+      concept_level1_v3_11: -873994932
+      concept_level1_v3_12: -1315390350
+      concept_level1_v3_13: -571741871
+      concept_level1_v3_14: -1982981360
+      concept_level1_v3_15: 427784787
+      concept_level1_v3_16: 110275795
+      concept_level1_v3_17: 80357134
+      concept_level1_v3_18: -1152263305
+      concept_level1_v3_19: 1744588514
+      concept_level1_v3_2: -273465017
+      concept_level1_v3_20: -2095185208
+      concept_level1_v3_21: -1028532777
+      concept_level1_v3_22: -1352362452
+      concept_level1_v3_23: -858823455
+      concept_level1_v3_24: 869909929
+      concept_level1_v3_25: 703377832
+      concept_level1_v3_26: -835497071
+      concept_level1_v3_27: -227572391
+      concept_level1_v3_28: -321689563
+      concept_level1_v3_29: -99394692
+      concept_level1_v3_3: 1013749410
+      concept_level1_v3_30: -1047738354
+      concept_level1_v3_31: 881446884
+      concept_level1_v3_32: 541954925
+      concept_level1_v3_33: 327777772
+      concept_level1_v3_4: -499729928
+      concept_level1_v3_5: 292001680
+      concept_level1_v3_6: -263836130
+      concept_level1_v3_7: 1299331612
+      concept_level1_v3_8: -1708401655
+      concept_level1_v3_9: -293173342
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
