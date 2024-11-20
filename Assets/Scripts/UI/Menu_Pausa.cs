@@ -23,6 +23,7 @@ public class Menu_Pausa : MonoBehaviour
         isPause = false;
         menuPausa.SetActive(false);
         Time.timeScale = 1.0f;
+        Cursor.visible = false;
     }
     private void Update()
     {
@@ -40,6 +41,7 @@ public class Menu_Pausa : MonoBehaviour
                 menuPausa.SetActive(true);
                 isPause = true;
                 Debug.Log("Open menu Pause");
+                Cursor.visible = true;
             }
         }
         else if(isPause == true) 
@@ -53,6 +55,7 @@ public class Menu_Pausa : MonoBehaviour
                 Time.timeScale = 1;
                 isPause = false;
                 Debug.Log("Closed menu pause");
+                Cursor.visible = false;
             }
         }
     }
@@ -70,6 +73,7 @@ public class Menu_Pausa : MonoBehaviour
         menuOptions.SetActive(false);
         isPause = false;
         Debug.Log("Close menu pause");
+        Cursor.visible = false;
     }
     #endregion
     #region Menu Options

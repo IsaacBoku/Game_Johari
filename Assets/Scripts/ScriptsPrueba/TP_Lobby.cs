@@ -19,4 +19,16 @@ public class TP_Lobby : MonoBehaviour
         }
         Time.timeScale = 1.0f;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!string.IsNullOrEmpty(SceneLoad))
+        {
+            SceneManager.LoadScene(SceneLoad);
+        }
+        else
+        {
+            Debug.LogError("These is not scene");
+        }
+        Time.timeScale = 1.0f;
+    }
 }

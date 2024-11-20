@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Menu_Inicio : MonoBehaviour
 {
+    private void Start()
+    {
+        Cursor.visible = true;
+    }
     public void Start_Game()
     {
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("Hub");
         Debug.Log("Has iniciado la partida");
         
     }
