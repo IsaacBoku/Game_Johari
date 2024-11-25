@@ -41,9 +41,6 @@ public class Player : Entity
         airState = new PlayerAirState(this, stateMachine, "Jump");
         wallSlider = new PlayerWallSliderState(this, stateMachine, "WallSlide");
         wallJump = new PlayerWallJumpState(this, stateMachine, "Jump");
-
-
-
     }
 
     protected override void Start()
@@ -68,7 +65,6 @@ public class Player : Entity
 
         moveSpeed = defaultMoveSpeed;
         jumpForce = defaultJumpForce;
-
     }
     public override void Die()
     {

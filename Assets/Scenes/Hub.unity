@@ -227,6 +227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -603,6 +608,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma caida_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7641414581881167092, guid: 861d1218aca677e47b72e980ae0311ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8647335026571728794, guid: 861d1218aca677e47b72e980ae0311ab,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -911,6 +921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma caida_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641414581881167092, guid: 861d1218aca677e47b72e980ae0311ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8647335026571728794, guid: 861d1218aca677e47b72e980ae0311ab,
         type: 3}
@@ -1738,6 +1753,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma caida_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7641414581881167092, guid: 861d1218aca677e47b72e980ae0311ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8647335026571728794, guid: 861d1218aca677e47b72e980ae0311ab,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2008,6 +2028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -3639,6 +3664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -3858,6 +3888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -4654,6 +4689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -4817,6 +4857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -6001,6 +6046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -6331,7 +6381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &774611941
 Transform:
   m_ObjectHideFlags: 0
@@ -6953,6 +7003,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_FlipX
@@ -7408,6 +7463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma caida_4
       objectReference: {fileID: 0}
+    - target: {fileID: 7641414581881167092, guid: 861d1218aca677e47b72e980ae0311ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8647335026571728794, guid: 861d1218aca677e47b72e980ae0311ab,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7575,6 +7635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -8588,6 +8653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -9151,6 +9221,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -9449,6 +9524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -9763,7 +9843,7 @@ GameObject:
   - component: {fileID: 1204790429}
   - component: {fileID: 1204790430}
   - component: {fileID: 1204790431}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Capa_negra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10939,6 +11019,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_FlipX
@@ -11123,6 +11208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma caida_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7641414581881167092, guid: 861d1218aca677e47b72e980ae0311ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8647335026571728794, guid: 861d1218aca677e47b72e980ae0311ab,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -11290,6 +11380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -11918,6 +12013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -12130,6 +12230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -20165,6 +20270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plataforma basica (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
       propertyPath: m_Sprite
@@ -20409,6 +20519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
@@ -21645,6 +21760,16 @@ PrefabInstance:
       propertyPath: wallCheckDistance
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7209236728017007193, guid: 7cc6aaa686eebd94786c1cefae9339a3,
+        type: 3}
+      propertyPath: whatIsWall.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209236728017007193, guid: 7cc6aaa686eebd94786c1cefae9339a3,
+        type: 3}
+      propertyPath: whatIsPlataform.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     - target: {fileID: 8651151808734230943, guid: 7cc6aaa686eebd94786c1cefae9339a3,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -21856,6 +21981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plataforma basica
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886554848179521312, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8003127995450167623, guid: 3af519a8a4fa7b84fbb31a6cbd9d0c31,
         type: 3}
