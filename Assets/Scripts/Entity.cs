@@ -29,6 +29,10 @@ public class Entity : MonoBehaviour
     private CameraFollowObject _cameraFollowObject;
     private float _fallSpeedYDampingChangeThreshold;
 
+    [Header("Skills")]
+    public bool isJumpActivated = false;
+    public bool isWallActivated = false;
+
     public int facingDir { get; private set; } = 1;
     public  bool facingRight = true;
 

@@ -21,6 +21,10 @@ public class PlayerWallSliderState : PlayerState
     public override void Update()
     {
         base.Update();
+
+        if(player.isWallActivated== true)
+        {
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             stateMachine.ChangeState(player.wallJump);
@@ -35,6 +39,7 @@ public class PlayerWallSliderState : PlayerState
         else
             rb.velocity = new Vector2(0, rb.velocity.y * .7f);
 
+        }
         if (player.IsGroundDetected())
             stateMachine.ChangeState(player.idleState);
     }
