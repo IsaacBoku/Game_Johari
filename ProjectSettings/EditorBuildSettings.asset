@@ -17,4 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pruebas.unity
     guid: 0127779ab38682d4c963618a45455af5
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 222d29fdc9291184d9a298456b4886ec,
+      type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 98c7085f02ac3e9498934bc6d4b6f6b4,
+      type: 3}

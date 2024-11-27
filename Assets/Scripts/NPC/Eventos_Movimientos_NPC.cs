@@ -20,44 +20,19 @@ public class Eventos_Movimientos_NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && event1 == true)
+       /* if (Input.GetKeyDown(KeyCode.Space) && event1 == true)
         {
 
             Move_NPC_Event2();
 
 
-        }
-        else if (Input.GetKeyDown(KeyCode.Space)&& event2 == true)
-        {
-            Move_NPC_Event();
-
-        }
+        }*/
     }
-
-
-    void Move_NPC_Event()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        switch (event2)
-        {
-            case true:
-                NPC.DOPath(waypoints2, duration);
-                event1 = true;
-                event2 = false;
-                break;
-            case false:
-
-                break;
-
-        }
-
+        Move_NPC_Event2();
     }
-    IEnumerator cooldwon()
-    {
-        event1 = false;
-        yield return new WaitForSeconds(duration);
-        event2 = true;
-    }
+
     void Move_NPC_Event2()
     {
         switch(event1)

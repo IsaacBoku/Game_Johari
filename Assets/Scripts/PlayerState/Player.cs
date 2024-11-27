@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : Entity
 {
@@ -24,7 +25,6 @@ public class Player : Entity
     public PlayerAirState airState { get; private set; }
     public PlayerWallSliderState wallSlider {  get; private set; }
     public PlayerWallJumpState wallJump {  get; private set; }
-
 
 
 
