@@ -42,6 +42,7 @@ public class Menu_Pausa : MonoBehaviour
                 isPause = true;
                 Debug.Log("Open menu Pause");
                 Cursor.visible = true;
+                
             }
         }
         else if(isPause == true) 

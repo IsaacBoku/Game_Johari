@@ -16,23 +16,10 @@ public class Eventos_Movimientos_NPC : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       /* if (Input.GetKeyDown(KeyCode.Space) && event1 == true)
-        {
-
-            Move_NPC_Event2();
-
-
-        }*/
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Move_NPC_Event2();
     }
-
     void Move_NPC_Event2()
     {
         switch(event1)
