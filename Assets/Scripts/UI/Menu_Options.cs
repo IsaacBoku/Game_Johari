@@ -8,6 +8,8 @@ using Lean.Localization;
 
 public class Menu_Options : MonoBehaviour
 {
+    static Menu_Options instance;
+
     [Header("Game_UI")]
 
     [Header("Audio")]
@@ -24,7 +26,17 @@ public class Menu_Options : MonoBehaviour
     /*[Header("Lean location")]
     [SerializeField] private TMP_Dropdown dropdownLanguage;
     [SerializeField] private TextMeshProUGUI dropdownLabel;*/
-    
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+    }
 
     private void Start()
     {

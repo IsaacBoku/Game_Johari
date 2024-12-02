@@ -81,8 +81,11 @@ public class Menu_Pausa : MonoBehaviour
     //Este void sirve para abrir el menu de Options mediante botones
     public void Menu_Options()
     {
+        menuPausa.SetActive(true);
         menuOptions.SetActive(true);
         menuPrincipal.SetActive(false);
+        menuVideo.SetActive(false);
+        menuAudio.SetActive(false);
         Debug.Log("Open Options");
     }
     //Este void sirve para abrir el menu de Video mediante botones
