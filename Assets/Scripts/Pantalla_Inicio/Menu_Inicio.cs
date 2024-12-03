@@ -11,7 +11,7 @@ public class Menu_Inicio : MonoBehaviour
     }
     public void Start_Game()
     {
-        SceneManager.LoadScene("Hub");
+        SceneManager.LoadScene("Introcuccion_Cinematic");
         Debug.Log("Has iniciado la partida");
         
     }
