@@ -15,7 +15,7 @@ public class Menu_Options : MonoBehaviour
     [Header("Audio")]
     [SerializeField] Slider _musicSilder, _sfxSlider;
 
-    [Header("Video")]
+    /*[Header("Video")]
     [SerializeField] private TMP_Dropdown resolutionDropDown;
     private Resolution[] resolutions;
     private List<Resolution> filteredResolutions;
@@ -23,7 +23,7 @@ public class Menu_Options : MonoBehaviour
     private int currentResolutionIndex = 0;
     private bool isFullScreen;
 
-    /*[Header("Lean location")]
+    [Header("Lean location")]
     [SerializeField] private TMP_Dropdown dropdownLanguage;
     [SerializeField] private TextMeshProUGUI dropdownLabel;*/
 
@@ -41,7 +41,7 @@ public class Menu_Options : MonoBehaviour
     private void Start()
     {
         
-        #region Resolution
+       /* #region Resolution
         resolutions = Screen.resolutions;
         filteredResolutions = new List<Resolution>();
 
@@ -84,19 +84,19 @@ public class Menu_Options : MonoBehaviour
         resolutionDropDown.value = currentResolutionIndex;
         resolutionDropDown.RefreshShownValue();
         SetResolution(currentResolutionIndex);
-        #endregion
+        #endregion*/
         
     }
 
-    public void SetResolution(int resolutionIndex)
+    /*public void SetResolution(int resolutionIndex)
     {
-        Resolution resolution = filteredResolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width,resolution.height,FullScreenMode.Windowed,resolution.refreshRateRatio);
+        //Resolution resolution = filteredResolutions[resolutionIndex];
+        //Screen.SetResolution(resolution.width,resolution.height,FullScreenMode.FullScreenWindow,resolution.refreshRateRatio);
     }
     public void SetFullScreen()
     {
         Screen.fullScreen = !Screen.fullScreen;
-    }
+    }*/
     #region Audio
     public void ToggleMusic()
     {
