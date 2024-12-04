@@ -23,7 +23,7 @@ public class Menu_Pausa : MonoBehaviour
         isPause = false;
         menuPausa.SetActive(false);
         Time.timeScale = 1.0f;
-        Cursor.visible = false;
+        Cursor.visible = true;
     }
     private void Update()
     {
