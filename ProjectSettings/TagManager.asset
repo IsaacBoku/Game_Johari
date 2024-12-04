@@ -45,11 +45,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: "Fondo_1\xBAnivel"
-    uniqueID: 128889357
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: "Fondo_1\xBAnivel"
+    uniqueID: 128889357
     locked: 0
   - name: Lobby_Arbol_2
     uniqueID: 1284410877

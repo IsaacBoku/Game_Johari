@@ -17,8 +17,8 @@ public class AudioActivator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.instance.PlayMusic(nombreMusica);
-        AudioManager.instance.PlaySFX(nombreSFX);
+       /* AudioManager.instance.PlayMusic(nombreMusica);
+        AudioManager.instance.PlaySFX(nombreSFX);*/
     }
 
     // Update is called once per frame
