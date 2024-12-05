@@ -66,6 +66,9 @@ TagManager:
   - name: "Ramas_Arboles_1\xBANivel"
     uniqueID: 187671363
     locked: 0
+  - name: Entrada cueva
+    uniqueID: 1048776645
+    locked: 0
   - name: SFX_Lobby
     uniqueID: 2641372747
     locked: 0
