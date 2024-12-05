@@ -4,26 +4,19 @@ using UnityEngine;
 
 public class CaidaPlataforma : MonoBehaviour
 {
-    float fallDelay = 1.5f;
+    float fallDelay = 2f;
     float destroyDelay = 2.5f;
     public Transform respawn;
 
     bool falling = false;
 
     public Rigidbody2D rb;
+    Animator ani;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        ani = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (falling)
@@ -40,9 +33,11 @@ public class CaidaPlataforma : MonoBehaviour
     private IEnumerator StartFall()
     {
         falling = true;
+        ani.SetBool("Fall", true);
 
         yield return new WaitForSeconds(fallDelay);
 
+        ani.SetBool("Fall", false);
         rb.bodyType = RigidbodyType2D.Dynamic;
         Invoke("Respawn", destroyDelay);
     }
